@@ -1,0 +1,306 @@
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-instances:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        sudo apt-get install -y jq dnsutils
+        sudo curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -o /usr/local/bin/yq
+        sudo chmod a+rx /usr/local/bin/yq
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+    - name: Fetch instances
+      run: |
+        function apply_update() {
+          mv services-tmp.json services-full.json
+          rm -f *-tmp.json
+
+          # Ensure no trailing slashes for any instance
+          sed -i 's/\/"/"/g' services-full.json
+        }
+
+        # ==============================================================
+        # Git config
+        # ==============================================================
+        git config --global user.name github-actions
+        git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git remote set-url origin git@github.com:efficientwrite/farside.git
+        git checkout main
+
+        # ==============================================================
+        # Bibliogram update
+        # NOTE: Bibliogram has been discontinued and the official instance
+        # at bibliogram.art is no longer around. Unless a new "official"
+        # instance pops up, Bibliogram will likely be removed from farside
+        # ==============================================================
+        #curl -s https://bibliogram.art/api/instances | \
+          #jq '[
+            #.data |
+            #.[] |
+            #select(.onion_site | not) |
+            #.address
+          #] | sort' > bibliogram-tmp.json
+        #jq --slurpfile bibliogram bibliogram-tmp.json \
+          #'( .[] | select(.type == "bibliogram") )
+          #.instances |= $bibliogram[0]' services-full.json > services-tmp.json
+
+        #apply_update
+
+        # ==============================================================
+        # searx update
+        # ==============================================================
+        curl -s https://raw.githubusercontent.com/searx/searx-instances/master/searxinstances/instances.yml | \
+          yq -o=json 'keys | sort' > searx-tmp.json
+        jq --slurpfile searx searx-tmp.json \
+          '( .[] | select(.type == "searx") )
+          .instances |= $searx[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # SearXNG update
+        # ==============================================================
+        curl -s https://searx.space/data/instances.json | \
+          jq '[
+            .instances |
+            to_entries[] |
+            select(.value.network_type == "normal") |
+            select(.value.generator | . != null) |
+            select(.value.generator | contains("searxng")) |
+            select(.value.version | . != null) |
+            select(.value.network.asn_privacy == 0) |
+            select(.value.http.error == null) |
+            select(.value.uptime.uptimeDay >= 99) |
+            select(.value.tls.grade == "A+" or .value.tls.grade == "A") |
+            select(.value.http.grade == "A+" or .value.http.grade == "A") |
+            select(.value.html.grade == "V" or .value.html.grade == "F") |
+            select(.key | contains(".i2p") | not) |
+            .key
+          ] | sort' > searxng-tmp.json
+
+        cat searxng-tmp.json | jq .
+
+        jq --slurpfile searxng searxng-tmp.json \
+          '( .[] | select(.type == "searxng") )
+          .instances |= $searxng[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # Nitter update
+        # ==============================================================
+        curl -s https://status.d420.de/api/v1/instances | \
+          jq '[
+            .hosts |
+            to_entries[] |
+            select(.value.healthy == true) |
+            .value.url ] |
+            sort' > nitter-tmp.json
+
+        jq --slurpfile nitter nitter-tmp.json \
+          '( .[] | select(.type == "nitter") )
+          .instances |= $nitter[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # SimplyTranslate update
+        # ==============================================================
+        curl -s https://codeberg.org/SimpleWeb/Website/raw/branch/master/config.json | jq -r '.projects | map(select(.id == "simplytranslate"))[0].instances | .[]' > st-out
+        sed -i -e 's/^/https:\/\//' st-out
+        jq -ncR '[inputs]' <<< "$(cat st-out | sort)" > st-tmp.json
+
+        jq --slurpfile simplytranslate st-tmp.json \
+          '( .[] | select(.type == "simplytranslate") )
+          .instances |= $simplytranslate[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # Whoogle update
+        # ==============================================================
+        curl -s https://raw.githubusercontent.com/efficientwrite/whoogle-search/main/misc/instances.txt > whoogle-out
+        jq -ncR '[inputs]' <<< "$(cat whoogle-out | sort)" > whoogle-tmp.json
+
+        jq --slurpfile whoogle whoogle-tmp.json \+
+          '( .[] | select(.type == "whoogle") )
+          .instances |= $whoogle[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # Invidious update
+        # ==============================================================
+        curl -s https://api.invidious.io/instances.json | \
+          jq '[
+            .[] |
+            select(.[1].type | contains("https")) ] |
+            [.[][1].uri] |
+            sort' > invidious-tmp.json
+        jq --slurpfile invidious invidious-tmp.json \
+          '( .[] | select(.type == "invidious") )
+          .instances |= $invidious[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # Scribe update
+        # ==============================================================
+        curl -s https://git.sr.ht/~edwardloveall/scribe/blob/main/docs/instances.json > scribe-tmp.json
+        jq --slurpfile scribe scribe-tmp.json \
+          '( .[] | select(.type == "scribe") )
+          .instances |= $scribe[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # teddit update
+        # Note: no longer maintained
+        # ==============================================================
+        #curl -s https://codeberg.org/teddit/teddit/raw/branch/main/instances.json | \
+          #jq '[
+            #.[] |
+            #select(.url | contains("https")) |
+            #.url ] |
+            #sort' > teddit-tmp.json
+        #jq --slurpfile teddit teddit-tmp.json \
+          #'( .[] | select(.type == "teddit") )
+          #.instances |= $teddit[0]' services-full.json > services-tmp.json
+
+        #apply_update
+
+        # ==============================================================
+        # Wikiless update
+        # NOTE: Codeberg has removed the Wikiless repo until the maintainer
+        # makes changes. See https://orenom.fi for updates.
+        # ==============================================================
+        #curl -s https://codeberg.org/orenom/Wikiless/raw/branch/main/instances.json | \
+          #jq '[
+            #.[] |
+            #select((.url | contains(".onion") | not) and (.url | contains("https"))).url ] |
+            #sort' > wikiless-tmp.json
+        #jq --slurpfile wikiless wikiless-tmp.json \
+          #'( .[] | select(.type == "wikiless") )
+          #.instances |= $wikiless[0]' services-full.json > services-tmp.json
+
+        #apply_update
+
+        # ==============================================================
+        # libreddit + redlib update
+        # ==============================================================
+        curl -s https://raw.githubusercontent.com/redlib-org/redlib-instances/main/instances.json | \
+          jq '[
+            .instances[] |
+            select(.url) |
+            .url ] |
+            sort' > libreddit-tmp.json
+
+        jq --slurpfile libreddit libreddit-tmp.json \
+          '( .[] | select(.type == "libreddit") )
+          .instances |= $libreddit[0]' services-full.json > services-tmp.json
+
+        mv services-tmp.json services-full.json
+
+        jq --slurpfile redlib libreddit-tmp.json \
+          '( .[] | select(.type == "redlib") )
+          .instances |= $redlib[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # BreezeWiki update
+        # ==============================================================
+        curl -s https://docs.breezewiki.com/files/instances.json | \
+          jq '[.[] | .instance]' > breezewiki-tmp.json
+        jq --slurpfile breezewiki breezewiki-tmp.json \
+          '(.[] | select(.type == "breezewiki") )
+          .instances |= $breezewiki[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # GotHub update
+        # ==============================================================
+
+        curl -s https://codeberg.org/gothub/gothub-instances/raw/branch/master/instances.json | \
+          jq '[.[] | .link]' > gothub-tmp.json
+        jq --slurpfile gothub gothub-tmp.json \
+          '(.[] | select(.type == "gothub") )
+          .instances |= $gothub[0]' services-full.json > services-tmp.json
+
+          apply_update
+
+        # ==============================================================
+        # LibreX/LibreY update
+        # ==============================================================
+        curl -s https://raw.githubusercontent.com/Ahwxorg/LibreY/main/instances.json | \
+          jq '[
+            .instances |
+            .[] |
+            .clearnet] |
+            sort' > librey-tmp.json
+
+        jq --slurpfile librey librey-tmp.json \
+          '( .[] | select(.type == "librey") )
+          .instances |= $librey[0]' services-full.json > services-tmp.json
+
+        apply_update
+
+        # ==============================================================
+        # Rimgo update
+        # ==============================================================
+
+        curl -s https://rimgo.codeberg.page/api.json | \
+          jq '[
+            .clearnet[] |
+            .url] |
+            sort' > rimgo-tmp.json
+
+        jq --slurpfile rimgo rimgo-tmp.json \
+          '(.[] | select(.type == "rimgo") )
+          .instances |= $rimgo[0]' services-full.json > services-tmp.json
+
+          apply_update
+
+        # ==============================================================
+        # Tent update
+        # ==============================================================
+
+        curl -s https://forgejo.sny.sh/sun/Tent/raw/branch/main/instances.json | \
+          jq '[
+            .[] |
+            select(.type == "http") |
+            .url] |
+            sort' > tent-tmp.json
+
+        jq --slurpfile tent tent-tmp.json \
+          '(.[] | select(.type == "tent") )
+          .instances |= $tent[0]' services-full.json > services-tmp.json
+
+          apply_update
+
+        # ==============================================================
+        # TODO: Update instances for other services
+        # ==============================================================
+
+        # ==============================================================
+        # Filter out Cloudflared instances from services-full.json into
+        # services.json
+        # ==============================================================
+        ./tools/un-cloudflare.sh
+
+        # ==============================================================
+        # Push changes
+        # ==============================================================
+        git add services.json services-full.json
+        git commit -m '[CI] Auto update instances' || exit 0
+        git push
