@@ -9,7 +9,6 @@
       "https://lr.ptr.moe",
       "https://red.artemislena.eu",
       "https://reddit.adminforge.de",
-      "https://reddit.owo.si",
       "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
       "https://redlib.frontendfriendly.xyz",
@@ -18,9 +17,9 @@
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
       "https://redlib.thebunny.zone",
+      "https://redlib.tux.pizza",
       "https://rl.blitzw.in",
-      "https://rl.bloat.cat",
-      "https://safereddit.com"
+      "https://rl.bloat.cat"
     ]
   },
   {
@@ -33,7 +32,6 @@
       "https://lr.ptr.moe",
       "https://red.artemislena.eu",
       "https://reddit.adminforge.de",
-      "https://reddit.owo.si",
       "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
       "https://redlib.frontendfriendly.xyz",
@@ -42,9 +40,9 @@
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
       "https://redlib.thebunny.zone",
+      "https://redlib.tux.pizza",
       "https://rl.blitzw.in",
-      "https://rl.bloat.cat",
-      "https://safereddit.com"
+      "https://rl.bloat.cat"
     ]
   },
   {
@@ -255,12 +253,7 @@
     "test_url": "/search?cookies_disabled=1&q=<%=query%>",
     "fallback": "https://search.sethforprivacy.com",
     "instances": [
-      "https://search.garudalinux.org",
-      "https://search.sethforprivacy.com",
-      "https://wg.vern.cc",
-      "https://whoogle.4040940.xyz",
-      "https://whoogle.lunar.icu",
-      "https://whoogle.privacydev.net"
+      "404: Not Found"
     ]
   },
   {
@@ -315,9 +308,9 @@
       "https://searx.dresden.network",
       "https://searx.foobar.vip",
       "https://searx.foss.family",
+      "https://searx.namejeff.xyz",
       "https://searx.oloke.xyz",
       "https://searx.ox2.fr",
-      "https://searx.rhscz.eu",
       "https://searx.stream",
       "https://searx.tiekoetter.com",
       "https://searx.tuxcloud.net",
@@ -325,6 +318,7 @@
       "https://searxng.f24o.zip",
       "https://searxng.hweeren.com",
       "https://searxng.shreven.org",
+      "https://searxng.site",
       "https://seek.fyi"
     ]
   },
