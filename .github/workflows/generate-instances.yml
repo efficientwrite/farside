@@ -131,7 +131,7 @@ jobs:
         curl -s https://raw.githubusercontent.com/efficientwrite/whoogle-search/main/misc/instances.txt > whoogle-out
         jq -ncR '[inputs]' <<< "$(cat whoogle-out | sort)" > whoogle-tmp.json
 
-        jq --slurpfile whoogle whoogle-tmp.json \+
+        jq --slurpfile whoogle whoogle-tmp.json \
           '( .[] | select(.type == "whoogle") )
           .instances |= $whoogle[0]' services-full.json > services-tmp.json
 
