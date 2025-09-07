@@ -58,42 +58,42 @@ jobs:
         # ==============================================================
         # searx update
         # ==============================================================
-        curl -s https://raw.githubusercontent.com/searx/searx-instances/master/searxinstances/instances.yml | \
-          yq -o=json 'keys | sort' > searx-tmp.json
-        jq --slurpfile searx searx-tmp.json \
-          '( .[] | select(.type == "searx") )
-          .instances |= $searx[0]' services-full.json > services-tmp.json
+        # curl -s https://raw.githubusercontent.com/searx/searx-instances/master/searxinstances/instances.yml | \
+        #   yq -o=json 'keys | sort' > searx-tmp.json
+        # jq --slurpfile searx searx-tmp.json \
+        #   '( .[] | select(.type == "searx") )
+        #   .instances |= $searx[0]' services-full.json > services-tmp.json
 
-        apply_update
+        # apply_update
 
         # ==============================================================
         # SearXNG update
         # ==============================================================
-        curl -s https://searx.space/data/instances.json | \
-          jq '[
-            .instances |
-            to_entries[] |
-            select(.value.network_type == "normal") |
-            select(.value.generator | . != null) |
-            select(.value.generator | contains("searxng")) |
-            select(.value.version | . != null) |
-            select(.value.network.asn_privacy == 0) |
-            select(.value.http.error == null) |
-            select(.value.uptime.uptimeDay >= 99) |
-            select(.value.tls.grade == "A+" or .value.tls.grade == "A") |
-            select(.value.http.grade == "A+" or .value.http.grade == "A") |
-            select(.value.html.grade == "V" or .value.html.grade == "F") |
-            select(.key | contains(".i2p") | not) |
-            .key
-          ] | sort' > searxng-tmp.json
+        # curl -s https://searx.space/data/instances.json | \
+        #   jq '[
+        #     .instances |
+        #     to_entries[] |
+        #     select(.value.network_type == "normal") |
+        #     select(.value.generator | . != null) |
+        #     select(.value.generator | contains("searxng")) |
+        #     select(.value.version | . != null) |
+        #     select(.value.network.asn_privacy == 0) |
+        #     select(.value.http.error == null) |
+        #     select(.value.uptime.uptimeDay >= 99) |
+        #     select(.value.tls.grade == "A+" or .value.tls.grade == "A") |
+        #     select(.value.http.grade == "A+" or .value.http.grade == "A") |
+        #     select(.value.html.grade == "V" or .value.html.grade == "F") |
+        #     select(.key | contains(".i2p") | not) |
+        #     .key
+        #   ] | sort' > searxng-tmp.json
 
-        cat searxng-tmp.json | jq .
+        # cat searxng-tmp.json | jq .
 
-        jq --slurpfile searxng searxng-tmp.json \
-          '( .[] | select(.type == "searxng") )
-          .instances |= $searxng[0]' services-full.json > services-tmp.json
+        # jq --slurpfile searxng searxng-tmp.json \
+        #   '( .[] | select(.type == "searxng") )
+        #   .instances |= $searxng[0]' services-full.json > services-tmp.json
 
-        apply_update
+        # apply_update
 
         # ==============================================================
         # Nitter update
@@ -115,27 +115,27 @@ jobs:
         # ==============================================================
         # SimplyTranslate update
         # ==============================================================
-        curl -s https://codeberg.org/SimpleWeb/Website/raw/branch/master/config.json | jq -r '.projects | map(select(.id == "simplytranslate"))[0].instances | .[]' > st-out
-        sed -i -e 's/^/https:\/\//' st-out
-        jq -ncR '[inputs]' <<< "$(cat st-out | sort)" > st-tmp.json
+        # curl -s https://codeberg.org/SimpleWeb/Website/raw/branch/master/config.json | jq -r '.projects | map(select(.id == "simplytranslate"))[0].instances | .[]' > st-out
+        # sed -i -e 's/^/https:\/\//' st-out
+        # jq -ncR '[inputs]' <<< "$(cat st-out | sort)" > st-tmp.json
 
-        jq --slurpfile simplytranslate st-tmp.json \
-          '( .[] | select(.type == "simplytranslate") )
-          .instances |= $simplytranslate[0]' services-full.json > services-tmp.json
+        # jq --slurpfile simplytranslate st-tmp.json \
+        #   '( .[] | select(.type == "simplytranslate") )
+        #   .instances |= $simplytranslate[0]' services-full.json > services-tmp.json
 
-        apply_update
+        # apply_update
 
         # ==============================================================
         # Whoogle update
         # ==============================================================
-        curl -s https://raw.githubusercontent.com/efficientwrite/whoogle-search/main/misc/instances.txt > whoogle-out
-        jq -ncR '[inputs]' <<< "$(cat whoogle-out | sort)" > whoogle-tmp.json
+        # curl -s https://raw.githubusercontent.com/efficientwrite/whoogle-search/main/misc/instances.txt > whoogle-out
+        # jq -ncR '[inputs]' <<< "$(cat whoogle-out | sort)" > whoogle-tmp.json
 
-        jq --slurpfile whoogle whoogle-tmp.json \
-          '( .[] | select(.type == "whoogle") )
-          .instances |= $whoogle[0]' services-full.json > services-tmp.json
+        # jq --slurpfile whoogle whoogle-tmp.json \
+        #   '( .[] | select(.type == "whoogle") )
+        #   .instances |= $whoogle[0]' services-full.json > services-tmp.json
 
-        apply_update
+        # apply_update
 
         # ==============================================================
         # Invidious update
@@ -195,22 +195,16 @@ jobs:
         #apply_update
 
         # ==============================================================
-        # libreddit + redlib update
+        # redlib update
         # ==============================================================
         curl -s https://raw.githubusercontent.com/redlib-org/redlib-instances/main/instances.json | \
           jq '[
             .instances[] |
             select(.url) |
             .url ] |
-            sort' > libreddit-tmp.json
+            sort' > redlib-tmp.json
 
-        jq --slurpfile libreddit libreddit-tmp.json \
-          '( .[] | select(.type == "libreddit") )
-          .instances |= $libreddit[0]' services-full.json > services-tmp.json
-
-        mv services-tmp.json services-full.json
-
-        jq --slurpfile redlib libreddit-tmp.json \
+        jq --slurpfile redlib redlib-tmp.json \
           '( .[] | select(.type == "redlib") )
           .instances |= $redlib[0]' services-full.json > services-tmp.json
 
