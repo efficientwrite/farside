@@ -135,6 +135,7 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://lightbrd.com",
+      "https://nitter.net",
       "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.space",
@@ -239,6 +240,7 @@
       "https://rimgo.perennialte.ch",
       "https://rimgo.privacyredirect.com",
       "https://rimgo.projectsegfau.lt",
+      "https://rimgo.proxik.cloud",
       "https://rimgo.pussthecat.org",
       "https://rimgo.quantenzitrone.eu",
       "https://rimgo.reallyaweso.me",
