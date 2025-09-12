@@ -27,18 +27,16 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://eu.safereddit.com",
       "https://l.opnxng.com",
+      "https://lr.ptr.moe",
       "https://red.artemislena.eu",
       "https://reddit.adminforge.de",
       "https://reddit.rtrace.io",
       "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
-      "https://redlib.frontendfriendly.xyz",
       "https://redlib.orangenet.cc",
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
-      "https://redlib.thebunny.zone",
       "https://redlib.tux.pizza",
       "https://rl.blitzw.in",
       "https://safereddit.com"
@@ -121,7 +119,6 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.net",
-      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.tiekoetter.com",
       "https://xcancel.com"
@@ -175,7 +172,6 @@
     "instances": [
       "https://lingva.frontendfriendly.xyz",
       "https://lingva.retiolus.net",
-      "https://translate.plausibility.cloud",
       "https://lingva.lunar.icu",
       "https://translate.dr460nf1r3.org",
       "https://translate.whateveritworks.org",
