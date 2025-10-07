@@ -296,7 +296,6 @@
     "test_url": "/wiki/Wikipedia?lang=en",
     "fallback": "https://wikiless.org",
     "instances": [
-      "https://wiki.owo.si",
       "https://wiki.adminforge.de",
       "https://wiki.froth.zone",
       "https://wikiless.esmailelbob.xyz",
@@ -441,7 +440,6 @@
     "instances": [
       "https://gothub.lunar.icu",
       "https://g.opnxng.com",
-      "https://gh.owo.si",
       "https://gothub.projectsegfau.lt",
       "https://gothub.r4fo.com",
       "https://gothub.dev.projectsegfau.lt",
@@ -454,7 +452,6 @@
     "test_url": "/questions/6591213/how-do-i-rename-a-local-git-branch",
     "fallback": "https://code.whatever.social",
     "instances": [
-      "https://ao.owo.si",
       "https://code.whatever.social",
       "https://ao.vern.cc",
       "https://overflow.smnz.de",
@@ -506,7 +503,6 @@
       "https://librey.nube-gran.de",
       "https://librey.org",
       "https://librey.sny.sh",
-      "https://ly.owo.si",
       "https://search.davidovski.xyz",
       "https://search.funami.tech",
       "https://search.liv.town",
