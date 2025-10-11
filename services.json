@@ -88,6 +88,7 @@
     "fallback": "https://invidious.snopyta.org",
     "instances": [
       "https://inv.nadeko.net",
+      "https://invidious.nerdvpn.de",
       "https://yewtu.be"
     ]
   },
