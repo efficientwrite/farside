@@ -28,14 +28,17 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://l.opnxng.com",
       "https://lr.ptr.moe",
       "https://red.artemislena.eu",
+      "https://reddit.adminforge.de",
       "https://reddit.nerdvpn.de",
+      "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
       "https://redlib.ducks.party",
-      "https://redlib.frontendfriendly.xyz",
       "https://redlib.orangenet.cc",
-      "https://redlib.perennialte.ch"
+      "https://redlib.perennialte.ch",
+      "https://redlib.reallyaweso.me"
     ]
   },
   {
@@ -129,6 +132,7 @@
     "instances": [
       "https://lightbrd.com",
       "https://nitter.net",
+      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.space",
       "https://nitter.tiekoetter.com",
