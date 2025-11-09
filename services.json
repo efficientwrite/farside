@@ -116,7 +116,6 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.net",
-      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.tiekoetter.com",
       "https://xcancel.com"
