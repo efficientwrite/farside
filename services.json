@@ -27,17 +27,15 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://libreddit.privacydev.net",
       "https://lr.ptr.moe",
       "https://red.artemislena.eu",
-      "https://reddit.adminforge.de",
-      "https://redlib.4o1x5.dev",
+      "https://reddit.rtrace.io",
       "https://redlib.catsarch.com",
       "https://redlib.frontendfriendly.xyz",
       "https://redlib.nadeko.net",
       "https://redlib.orangenet.cc",
       "https://redlib.privacyredirect.com",
-      "https://redlib.privadency.com",
+      "https://redlib.reallyaweso.me",
       "https://redlib.thebunny.zone"
     ]
   },
@@ -99,6 +97,7 @@
     "test_url": "/watch?v=dQw4w9WgXcQ|/streams/dQw4w9WgXcQ",
     "fallback": "https://piped.video",
     "instances": [
+      "https://piped.tokhmi.xyz|https://pipedapi.tokhmi.xyz",
       "https://piped.moomoo.me|https://pipedapi.moomoo.me",
       "https://watch.whatever.social|https://watchapi.whatever.social",
       "https://piped.garudalinux.org|https://piped-api.garudalinux.org",
