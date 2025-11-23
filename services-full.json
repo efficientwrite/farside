@@ -92,13 +92,7 @@
     "type": "invidious",
     "test_url": "/watch?v=eBGIQ7ZuuiU",
     "fallback": "https://invidious.snopyta.org",
-    "instances": [
-      "https://inv.nadeko.net",
-      "https://inv.perditum.com",
-      "https://invidious.f5.si",
-      "https://invidious.nerdvpn.de",
-      "https://yewtu.be"
-    ]
+    "instances": []
   },
   {
     "type": "piped",
@@ -132,7 +126,6 @@
     "instances": [
       "https://lightbrd.com",
       "https://nitter.net",
-      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.space",
       "https://nitter.tiekoetter.com",
