@@ -29,7 +29,9 @@
     "instances": [
       "https://lr.ptr.moe",
       "https://red.artemislena.eu",
+      "https://reddit.adminforge.de",
       "https://reddit.rtrace.io",
+      "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
       "https://redlib.frontendfriendly.xyz",
       "https://redlib.nadeko.net",
@@ -85,7 +87,12 @@
     "type": "invidious",
     "test_url": "/watch?v=eBGIQ7ZuuiU",
     "fallback": "https://invidious.snopyta.org",
-    "instances": []
+    "instances": [
+      "https://inv.nadeko.net",
+      "https://inv.perditum.com",
+      "https://invidious.nerdvpn.de",
+      "https://yewtu.be"
+    ]
   },
   {
     "type": "piped",
@@ -114,6 +121,7 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.net",
+      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.tiekoetter.com",
       "https://xcancel.com"
