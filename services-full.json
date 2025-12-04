@@ -28,20 +28,21 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://libreddit.privacydev.net",
       "https://lr.ptr.moe",
-      "https://red.artemislena.eu",
       "https://reddit.adminforge.de",
       "https://reddit.rtrace.io",
       "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
-      "https://redlib.cow.rip",
+      "https://redlib.ducks.party",
       "https://redlib.frontendfriendly.xyz",
       "https://redlib.nadeko.net",
       "https://redlib.orangenet.cc",
       "https://redlib.perennialte.ch",
       "https://redlib.privacyredirect.com",
-      "https://redlib.reallyaweso.me"
+      "https://redlib.privadency.com",
+      "https://redlib.r4fo.com",
+      "https://redlib.reallyaweso.me",
+      "https://redlib.thebunny.zone"
     ]
   },
   {
@@ -445,6 +446,7 @@
       "https://breezewiki.com",
       "https://antifandom.com",
       "https://breezewiki.pussthecat.org",
+      "https://breeze.mint.lgbt",
       "https://z.opnxng.com",
       "https://breezewiki.hyperreal.coffee",
       "https://breezewiki.woodland.cafe",
@@ -453,7 +455,6 @@
       "https://fandom.reallyaweso.me",
       "https://breezewiki.r4fo.com",
       "https://bw.artemislena.eu",
-      "https://bw.hamstro.dev",
       "https://breeze.hostux.net",
       "https://breezewiki.private.coffee",
       "http://breezewiki.nadekonfkhwlxwwk4ycbvq42zvcjmvo5iakl4tajojjwxd4a5dcetuyd.onion",
