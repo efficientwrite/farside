@@ -27,8 +27,10 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://l.opnxng.com",
       "https://lr.ptr.moe",
-      "https://redlib.catsarch.com"
+      "https://redlib.catsarch.com",
+      "https://redlib.privacyredirect.com"
     ]
   },
   {
