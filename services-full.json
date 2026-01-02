@@ -28,12 +28,13 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
-      "https://redlib.nadeko.net",
+      "https://redlib.ducks.party",
       "https://redlib.orangenet.cc",
       "https://redlib.perennialte.ch",
       "https://redlib.privadency.com",
-      "https://redlib.thebunny.zone"
+      "https://redlib.r4fo.com"
     ]
   },
   {
