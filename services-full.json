@@ -28,8 +28,12 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://l.opnxng.com",
+      "https://red.artemislena.eu",
+      "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
+      "https://redlib.ducks.party",
       "https://redlib.nadeko.net",
       "https://redlib.orangenet.cc",
       "https://redlib.perennialte.ch",
