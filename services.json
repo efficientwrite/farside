@@ -115,7 +115,6 @@
       "https://nitter.catsarch.com",
       "https://nitter.net",
       "https://nitter.poast.org",
-      "https://nitter.privacyredirect.com",
       "https://nitter.tiekoetter.com",
       "https://xcancel.com"
     ]
@@ -180,27 +179,7 @@
     "type": "rimgo",
     "test_url": "/a/H8M4rcp",
     "fallback": "https://rimgo.projectsegfau.lt",
-    "instances": [
-      "https://imgur.artemislena.eu",
-      "https://imgur.nerdvpn.de",
-      "https://r.opnxng.com",
-      "https://rg.kuuro.net",
-      "https://ri.nadeko.net",
-      "https://rimgo.4o1x5.dev",
-      "https://rimgo.bloat.cat",
-      "https://rimgo.canine.tools",
-      "https://rimgo.catsarch.com",
-      "https://rimgo.darkness.services",
-      "https://rimgo.ducks.party",
-      "https://rimgo.frontendfriendly.xyz",
-      "https://rimgo.hostux.net",
-      "https://rimgo.nohost.network",
-      "https://rimgo.privacyredirect.com",
-      "https://rimgo.pussthecat.org",
-      "https://rimgo.reallyaweso.me",
-      "https://rimgo.totaldarkness.net",
-      "https://rmgur.com"
-    ]
+    "instances": null
   },
   {
     "type": "whoogle",
