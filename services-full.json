@@ -28,15 +28,15 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://l.opnxng.com",
       "https://red.artemislena.eu",
-      "https://reddit.adminforge.de",
-      "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
       "https://redlib.nadeko.net",
       "https://redlib.orangenet.cc",
       "https://redlib.perennialte.ch",
-      "https://redlib.privadency.com"
+      "https://redlib.privadency.com",
+      "https://redlib.r4fo.com"
     ]
   },
   {
@@ -210,6 +210,7 @@
       "https://ri.nadeko.net",
       "https://rimgo.4o1x5.dev",
       "https://rimgo.aketawi.space",
+      "https://rimgo.astrial.org",
       "https://rimgo.bloat.cat",
       "https://rimgo.canine.tools",
       "https://rimgo.catsarch.com",
