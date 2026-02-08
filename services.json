@@ -27,11 +27,11 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://l.opnxng.com",
       "https://red.artemislena.eu",
-      "https://redlib.4o1x5.dev",
       "https://redlib.catsarch.com",
+      "https://redlib.nadeko.net",
       "https://redlib.orangenet.cc",
+      "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com"
     ]
   },
@@ -343,7 +343,6 @@
       "https://quetre.lunar.icu",
       "https://que.wilbvr.me",
       "https://questions.whateveritworks.org",
-      "https://quetre.fascinated.cc",
       "https://quetre.catsarch.com",
       "https://quetre.frontendfriendly.xyz",
       "https://quetre.ducks.party"
@@ -364,8 +363,6 @@
       "https://binge.whateveritworks.social",
       "https://libremdb.lunar.icu",
       "https://lmdb.hostux.net",
-      "https://libremdb.nerdyfam.tech",
-      "https://libremdb.fascinated.cc",
       "https://libremdb.catsarch.com",
       "https://libremdb.frontendfriendly.xyz",
       "https://libremdb.ducks.party"
@@ -430,7 +427,6 @@
     "test_url": "/questions/6591213/how-do-i-rename-a-local-git-branch",
     "fallback": "https://code.whatever.social",
     "instances": [
-      "https://ao.owo.si",
       "https://code.whatever.social",
       "https://ao.vern.cc",
       "https://overflow.smnz.de",
@@ -439,7 +435,6 @@
       "https://overflow.hostux.net",
       "https://overflow.projectsegfau.lt",
       "https://code.xbdm.fun",
-      "https://overflow.fascinated.cc",
       "https://ao.bloatcat.tk",
       "https://anonoverflow.frontendfriendly.xyz",
       "https://overflow.ducks.party"
@@ -461,10 +456,8 @@
       "https://4get.lunar.icu",
       "https://4get.lvkaszus.pl",
       "https://4get.perennialte.ch",
-      "https://4get.plunked.party",
       "https://4get.psily.garden",
       "https://4get.seitan-ayoub.lol",
-      "https://4get.sijh.net",
       "https://4get.silly.computer",
       "https://4get.zzls.xyz",
       "https://4getus.zzls.xyz",
@@ -483,7 +476,6 @@
       "https://librey.darkness.services",
       "https://librey.nube-gran.de",
       "https://librey.org",
-      "https://ly.owo.si",
       "https://search.blitzw.in",
       "https://search.davidovski.xyz",
       "https://search.funami.tech",
@@ -498,18 +490,6 @@
     "type": "tent",
     "test_url": "/search.php?query=<%=query%>",
     "fallback": "https://tent.sny.sh",
-    "instances": [
-      "https://bandcamp.lurkmore.com",
-      "https://tent.bloat.cat",
-      "https://tent.canine.tools",
-      "https://tent.deep-swarm.xyz",
-      "https://tent.lab8.cz",
-      "https://tent.nbh.ax",
-      "https://tent.private.coffee",
-      "https://tent.sny.sh",
-      "https://tn.dc09.ru",
-      "https://tn.maid.zone",
-      "https://tn.vern.cc"
-    ]
+    "instances": null
   }
 ]
