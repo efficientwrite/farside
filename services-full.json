@@ -127,12 +127,10 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
-      "https://lightbrd.com",
       "https://nitter.catsarch.com",
       "https://nitter.net",
       "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
-      "https://nitter.space",
       "https://nitter.tiekoetter.com",
       "https://nuku.trabun.org",
       "https://xcancel.com"
