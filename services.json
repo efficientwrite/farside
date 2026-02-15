@@ -345,6 +345,7 @@
       "https://quetre.lunar.icu",
       "https://que.wilbvr.me",
       "https://questions.whateveritworks.org",
+      "https://quetre.fascinated.cc",
       "https://quetre.catsarch.com",
       "https://quetre.frontendfriendly.xyz",
       "https://quetre.ducks.party"
@@ -365,6 +366,8 @@
       "https://binge.whateveritworks.social",
       "https://libremdb.lunar.icu",
       "https://lmdb.hostux.net",
+      "https://libremdb.nerdyfam.tech",
+      "https://libremdb.fascinated.cc",
       "https://libremdb.catsarch.com",
       "https://libremdb.frontendfriendly.xyz",
       "https://libremdb.ducks.party"
@@ -429,6 +432,7 @@
     "test_url": "/questions/6591213/how-do-i-rename-a-local-git-branch",
     "fallback": "https://code.whatever.social",
     "instances": [
+      "https://ao.owo.si",
       "https://code.whatever.social",
       "https://ao.vern.cc",
       "https://overflow.smnz.de",
@@ -437,6 +441,7 @@
       "https://overflow.hostux.net",
       "https://overflow.projectsegfau.lt",
       "https://code.xbdm.fun",
+      "https://overflow.fascinated.cc",
       "https://ao.bloatcat.tk",
       "https://anonoverflow.frontendfriendly.xyz",
       "https://overflow.ducks.party"
@@ -458,8 +463,10 @@
       "https://4get.lunar.icu",
       "https://4get.lvkaszus.pl",
       "https://4get.perennialte.ch",
+      "https://4get.plunked.party",
       "https://4get.psily.garden",
       "https://4get.seitan-ayoub.lol",
+      "https://4get.sijh.net",
       "https://4get.silly.computer",
       "https://4get.zzls.xyz",
       "https://4getus.zzls.xyz",
@@ -478,6 +485,7 @@
       "https://librey.darkness.services",
       "https://librey.nube-gran.de",
       "https://librey.org",
+      "https://ly.owo.si",
       "https://search.blitzw.in",
       "https://search.davidovski.xyz",
       "https://search.funami.tech",
