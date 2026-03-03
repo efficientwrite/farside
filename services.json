@@ -14,7 +14,6 @@
       "https://redlib.catsarch.com",
       "https://redlib.frontendfriendly.xyz",
       "https://redlib.orangenet.cc",
-      "https://redlib.perennialte.ch",
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
       "https://redlib.thebunny.zone",
@@ -33,10 +32,8 @@
       "https://redlib.4o1x5.dev",
       "https://redlib.ducks.party",
       "https://redlib.nadeko.net",
-      "https://redlib.perennialte.ch",
       "https://redlib.privacyredirect.com",
-      "https://redlib.privadency.com",
-      "https://redlib.r4fo.com"
+      "https://redlib.privadency.com"
     ]
   },
   {
@@ -49,16 +46,13 @@
       "https://rdt.trom.tf",
       "https://reddit.lol",
       "https://snoo.ioens.is",
-      "https://t.sneed.network",
       "https://td.vern.cc",
       "https://teddit.adminforge.de",
       "https://teddit.bus-hit.me",
-      "https://teddit.domain.glass",
       "https://teddit.froth.zone",
       "https://teddit.garudalinux.org",
       "https://teddit.ggc-project.de",
       "https://teddit.hostux.net",
-      "https://teddit.httpjames.space",
       "https://teddit.laserdisc.tokyo",
       "https://teddit.net",
       "https://teddit.no-logs.com",
@@ -124,8 +118,7 @@
       "https://nitter.net",
       "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
-      "https://nitter.tiekoetter.com",
-      "https://xcancel.com"
+      "https://nitter.tiekoetter.com"
     ]
   },
   {
@@ -497,6 +490,18 @@
     "type": "tent",
     "test_url": "/search.php?query=<%=query%>",
     "fallback": "https://tent.sny.sh",
-    "instances": null
+    "instances": [
+      "https://bandcamp.lurkmore.com",
+      "https://tent.bloat.cat",
+      "https://tent.canine.tools",
+      "https://tent.deep-swarm.xyz",
+      "https://tent.lab8.cz",
+      "https://tent.nbh.ax",
+      "https://tent.private.coffee",
+      "https://tent.sny.sh",
+      "https://tn.dc09.ru",
+      "https://tn.maid.zone",
+      "https://tn.vern.cc"
+    ]
   }
 ]
