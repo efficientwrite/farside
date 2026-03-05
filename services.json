@@ -180,26 +180,7 @@
     "type": "rimgo",
     "test_url": "/a/H8M4rcp",
     "fallback": "https://rimgo.projectsegfau.lt",
-    "instances": [
-      "https://imgur.artemislena.eu",
-      "https://imgur.nerdvpn.de",
-      "https://r.opnxng.com",
-      "https://rg.kuuro.net",
-      "https://ri.nadeko.net",
-      "https://rimgo.4o1x5.dev",
-      "https://rimgo.astrial.org",
-      "https://rimgo.bloat.cat",
-      "https://rimgo.canine.tools",
-      "https://rimgo.catsarch.com",
-      "https://rimgo.darkness.services",
-      "https://rimgo.ducks.party",
-      "https://rimgo.hostux.net",
-      "https://rimgo.nohost.network",
-      "https://rimgo.privacyredirect.com",
-      "https://rimgo.pussthecat.org",
-      "https://rimgo.reallyaweso.me",
-      "https://rmgur.com"
-    ]
+    "instances": null
   },
   {
     "type": "whoogle",
@@ -489,18 +470,6 @@
     "type": "tent",
     "test_url": "/search.php?query=<%=query%>",
     "fallback": "https://tent.sny.sh",
-    "instances": [
-      "https://bandcamp.lurkmore.com",
-      "https://tent.bloat.cat",
-      "https://tent.canine.tools",
-      "https://tent.deep-swarm.xyz",
-      "https://tent.lab8.cz",
-      "https://tent.nbh.ax",
-      "https://tent.private.coffee",
-      "https://tent.sny.sh",
-      "https://tn.dc09.ru",
-      "https://tn.maid.zone",
-      "https://tn.vern.cc"
-    ]
+    "instances": null
   }
 ]
