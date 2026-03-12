@@ -29,7 +29,10 @@
     "fallback": "https://redlib.freedit.eu",
     "instances": [
       "https://red.artemislena.eu",
+      "https://redlib.ducks.party",
+      "https://redlib.nadeko.net",
       "https://redlib.perennialte.ch",
+      "https://redlib.privadency.com",
       "https://redlib.r4fo.com"
     ]
   },
