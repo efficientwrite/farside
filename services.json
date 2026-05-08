@@ -30,7 +30,6 @@
       "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.nadeko.net",
-      "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com"
     ]
   },
@@ -116,6 +115,7 @@
     "instances": [
       "https://nitter.catsarch.com",
       "https://nitter.net",
+      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.tiekoetter.com",
       "https://xcancel.com"
