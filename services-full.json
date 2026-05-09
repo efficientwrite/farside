@@ -127,7 +127,6 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
-      "https://lightbrd.com",
       "https://nitter.catsarch.com",
       "https://nitter.kareem.one",
       "https://nitter.net",
@@ -145,14 +144,9 @@
     "fallback": "https://scribe.rip",
     "instances": [
       "https://scribe.nixnet.services",
-      "https://scribe.citizen4.eu",
-      "https://scribe.bus-hit.me",
-      "https://scribe.froth.zone",
-      "https://scribe.privacydev.net",
       "https://scribe.rawbit.ninja",
       "https://sc.vern.cc",
       "https://m.opnxng.com",
-      "https://scribe.manasiwibi.com",
       "https://scribe.r4fo.com",
       "https://scribe.privacyredirect.com"
     ]
