@@ -29,6 +29,7 @@
     "instances": [
       "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
+      "https://redlib.ducks.party",
       "https://redlib.nadeko.net",
       "https://redlib.privadency.com"
     ]
@@ -409,13 +410,11 @@
     "fallback": "https://gothub.projectsegfau.lt",
     "instances": [
       "https://gothub.lunar.icu",
-      "https://g.opnxng.com",
-      "https://gh.owo.si",
-      "https://gothub.projectsegfau.lt",
       "https://gothub.r4fo.com",
       "https://gothub.dev.projectsegfau.lt",
-      "https://gh.phreedom.club",
-      "https://gothub.ducks.party"
+      "https://gothub.projectsegfau.lt",
+      "https://gothub.libre.tw",
+      "https://gothub.wuemeli.com"
     ]
   },
   {
