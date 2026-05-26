@@ -27,7 +27,10 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://red.artemislena.eu",
+      "https://reddit.rtrace.io",
       "https://redlib.catsarch.com",
+      "https://redlib.orangenet.cc",
       "https://redlib.privadency.com"
     ]
   },
@@ -180,6 +183,7 @@
       "https://imgur.nerdvpn.de",
       "https://r.opnxng.com",
       "https://rg.kuuro.net",
+      "https://ri.bcow.xyz",
       "https://ri.nadeko.net",
       "https://rimgo.4o1x5.dev",
       "https://rimgo.astrial.org",
@@ -193,6 +197,7 @@
       "https://rimgo.privacyredirect.com",
       "https://rimgo.pussthecat.org",
       "https://rimgo.reallyaweso.me",
+      "https://rimgo.wuemeli.com",
       "https://rmgur.com"
     ]
   },
