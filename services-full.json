@@ -28,7 +28,6 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
       "https://redlib.perennialte.ch",
@@ -133,10 +132,10 @@
       "https://nitter.catsarch.com",
       "https://nitter.kareem.one",
       "https://nitter.net",
+      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.space",
       "https://nitter.tiekoetter.com",
-      "https://nuku.trabun.org",
       "https://xcancel.com"
     ]
   },
@@ -416,24 +415,7 @@
     "type": "breezewiki",
     "test_url": "/balatrogame/wiki/Abandoned_Deck",
     "fallback": "https://breezewiki.com",
-    "instances": [
-      "https://breezewiki.com",
-      "https://antifandom.com",
-      "https://breezewiki.pussthecat.org",
-      "https://breeze.mint.lgbt",
-      "https://z.opnxng.com",
-      "https://breezewiki.hyperreal.coffee",
-      "https://breezewiki.woodland.cafe",
-      "https://breezewiki.nadeko.net",
-      "https://fandom.reallyaweso.me",
-      "https://breezewiki.r4fo.com",
-      "https://bw.artemislena.eu",
-      "https://breeze.hostux.net",
-      "https://breezewiki.private.coffee",
-      "http://breezewiki.nadekonfkhwlxwwk4ycbvq42zvcjmvo5iakl4tajojjwxd4a5dcetuyd.onion",
-      "http://breezewiki.r4focoma7gu2zdwwcjjad47ysxt634lg73sxmdbkdozanwqslho5ohyd.onion",
-      "http://breezewiki.coffee2m3bjsrrqqycx6ghkxrnejl2q6nl7pjw2j4clchjj6uk5zozad.onion"
-    ]
+    "instances": null
   },
   {
     "type": "gothub",
