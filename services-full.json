@@ -28,7 +28,6 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.nadeko.net",
       "https://redlib.orangenet.cc",
@@ -134,10 +133,11 @@
       "https://nitter.catsarch.com",
       "https://nitter.kareem.one",
       "https://nitter.net",
-      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.space",
       "https://nitter.tiekoetter.com",
+      "https://nt.vern.cc",
+      "https://nuku.trabun.org",
       "https://xcancel.com"
     ]
   },
