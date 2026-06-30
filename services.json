@@ -27,7 +27,7 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://red.artemislena.eu",
+      "https://reddit.rtrace.io",
       "https://redlib.catsarch.com",
       "https://redlib.nadeko.net",
       "https://redlib.privacyredirect.com",
@@ -119,7 +119,6 @@
     "instances": [
       "https://nitter.catsarch.com",
       "https://nitter.net",
-      "https://nitter.poast.org",
       "https://nitter.privacyredirect.com",
       "https://nitter.tiekoetter.com",
       "https://nt.vern.cc",
