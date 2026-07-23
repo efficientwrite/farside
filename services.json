@@ -120,6 +120,7 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.catsarch.com",
+      "https://nitter.net",
       "https://nitter.poast.org",
       "https://nitter.tiekoetter.com",
       "https://xcancel.com"
