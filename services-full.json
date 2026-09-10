@@ -28,6 +28,7 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
       "https://redlib.nadeko.net",
@@ -131,7 +132,8 @@
       "https://nitter.kareem.one",
       "https://nitter.meowing.monster",
       "https://nitter.miningtcup.me",
-      "https://nitter.xitter.cc"
+      "https://nitter.xitter.cc",
+      "https://shitter.thepixora.com"
     ]
   },
   {
