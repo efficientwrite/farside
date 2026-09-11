@@ -128,10 +128,12 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.click",
       "https://nitter.jaydenha.uk",
       "https://nitter.kareem.one",
       "https://nitter.meowing.monster",
       "https://nitter.miningtcup.me",
+      "https://nitter.netbub.com",
       "https://nitter.xitter.cc",
       "https://shitter.thepixora.com"
     ]

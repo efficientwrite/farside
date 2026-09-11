@@ -117,6 +117,7 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.click",
       "https://nitter.jaydenha.uk",
       "https://nitter.meowing.monster",
       "https://nitter.miningtcup.me"
