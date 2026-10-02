@@ -128,7 +128,9 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.click",
       "https://nitter.jaydenha.uk",
+      "https://nitter.kareem.one",
       "https://nitter.meowing.monster",
       "https://nitter.netbub.com",
       "https://shitter.thepixora.com"
