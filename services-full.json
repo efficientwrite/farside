@@ -28,9 +28,11 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
       "https://redlib.nadeko.net",
+      "https://redlib.nohost.network",
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
       "https://redlib.r4fo.com",
@@ -128,6 +130,7 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.jaydenha.uk",
       "https://nitter.kareem.one",
       "https://nitter.meowing.monster",
       "https://nitter.netbub.com",
