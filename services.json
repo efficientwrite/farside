@@ -30,10 +30,10 @@
       "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.nadeko.net",
-      "https://redlib.nohost.network",
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
       "https://redlib.r4fo.com",
+      "https://redlib.reallyaweso.me",
       "https://safereddit.com"
     ]
   },
@@ -119,6 +119,7 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.click",
       "https://nitter.jaydenha.uk",
       "https://nitter.tiekoetter.com"
     ]
