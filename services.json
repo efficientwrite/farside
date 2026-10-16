@@ -33,6 +33,7 @@
       "https://redlib.privacyredirect.com",
       "https://redlib.privadency.com",
       "https://redlib.r4fo.com",
+      "https://redlib.reallyaweso.me",
       "https://safereddit.com"
     ]
   },
@@ -119,9 +120,7 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.click",
-      "https://nitter.jaydenha.uk",
       "https://nitter.meowing.monster",
-      "https://nitter.miningtcup.me",
       "https://nitter.tiekoetter.com"
     ]
   },
