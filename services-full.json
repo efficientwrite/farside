@@ -28,6 +28,7 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://red.artemislena.eu",
       "https://redlib.catsarch.com",
       "https://redlib.nadeko.net",
       "https://redlib.privacyredirect.com",
@@ -127,6 +128,8 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.click",
+      "https://nitter.jaydenha.uk",
       "https://nitter.kareem.one",
       "https://nitter.meowing.monster",
       "https://nitter.netbub.com",
