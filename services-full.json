@@ -129,13 +129,12 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.click",
-      "https://nitter.jaydenha.uk",
-      "https://nitter.kareem.one",
       "https://nitter.mie.foundation",
       "https://nitter.mizuki.st",
       "https://nitter.netbub.com",
       "https://nitter.pp.ua",
       "https://nitter.tiekoetter.com",
+      "https://nitter.xitter.cc",
       "https://shitter.thepixora.com"
     ]
   },
