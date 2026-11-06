@@ -26,7 +26,9 @@
     "type": "redlib",
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
-    "instances": []
+    "instances": [
+      "https://redlib.privadency.com"
+    ]
   },
   {
     "type": "teddit",
@@ -110,6 +112,7 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
+      "https://nitter.click",
       "https://nitter.jaydenha.uk",
       "https://nitter.mie.foundation",
       "https://nitter.mizuki.st",
