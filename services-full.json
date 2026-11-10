@@ -29,6 +29,7 @@
     "fallback": "https://redlib.freedit.eu",
     "instances": [
       "https://redlib.cow.rip",
+      "https://redlib.freedit.eu",
       "https://redlib.privadency.com"
     ]
   },
@@ -122,7 +123,7 @@
     "test_url": "/jack/status/20",
     "fallback": "https://nitter.net",
     "instances": [
-      "https://nitter.click",
+      "https://nitter.catsarch.com",
       "https://nitter.jaydenha.uk",
       "https://nitter.kareem.one",
       "https://nitter.mie.foundation",
