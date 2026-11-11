@@ -124,15 +124,17 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.catsarch.com",
+      "https://nitter.click",
+      "https://nitter.ip6arpa.uk",
       "https://nitter.jaydenha.uk",
       "https://nitter.kareem.one",
       "https://nitter.mie.foundation",
-      "https://nitter.mizuki.st",
       "https://nitter.netbub.com",
       "https://nitter.pp.ua",
       "https://nitter.privacyredirect.com",
       "https://nitter.r4fo.com",
       "https://nitter.tiekoetter.com",
+      "https://nitterts.pages.dev",
       "https://shitter.thepixora.com"
     ]
   },
