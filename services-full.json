@@ -28,9 +28,13 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
+      "https://reddit.jeremyh.xyz",
       "https://redlib.cow.rip",
       "https://redlib.freedit.eu",
-      "https://redlib.privadency.com"
+      "https://redlib.privadency.com",
+      "https://redlib.tiekoetter.com",
+      "https://redlib.utilibre.org",
+      "https://redlib.zanity.net"
     ]
   },
   {
@@ -134,7 +138,6 @@
       "https://nitter.privacyredirect.com",
       "https://nitter.r4fo.com",
       "https://nitter.tiekoetter.com",
-      "https://nitter.xitter.cc",
       "https://nitterts.pages.dev",
       "https://shitter.thepixora.com"
     ]
