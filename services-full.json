@@ -29,10 +29,14 @@
     "fallback": "https://redlib.freedit.eu",
     "instances": [
       "https://reddit.jeremyh.xyz",
+      "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
       "https://redlib.freedit.eu",
+      "https://redlib.hbubli.cc",
+      "https://redlib.nadeko.net",
       "https://redlib.privadency.com",
-      "https://redlib.tiekoetter.com",
+      "https://redlib.r4fo.com",
+      "https://redlib.thepixora.com",
       "https://redlib.utilibre.org",
       "https://redlib.zanity.net"
     ]
@@ -139,6 +143,7 @@
       "https://nitter.r4fo.com",
       "https://nitter.tiekoetter.com",
       "https://nitterts.pages.dev",
+      "https://nohup.cz",
       "https://shitter.thepixora.com"
     ]
   },
