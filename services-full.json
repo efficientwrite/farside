@@ -132,7 +132,9 @@
     "fallback": "https://nitter.net",
     "instances": [
       "https://nitter.catsarch.com",
+      "https://nitter.click",
       "https://nitter.ip6arpa.uk",
+      "https://nitter.jaydenha.uk",
       "https://nitter.kareem.one",
       "https://nitter.mie.foundation",
       "https://nitter.mizuki.st",
@@ -142,7 +144,6 @@
       "https://nitter.tiekoetter.com",
       "https://nitter.xitter.cc",
       "https://nitterts.pages.dev",
-      "https://nohup.cz",
       "https://shitter.thepixora.com"
     ]
   },
@@ -210,7 +211,6 @@
       "https://imgur.artemislena.eu",
       "https://imgur.nerdvpn.de",
       "https://r.opnxng.com",
-      "https://rg.kuuro.net",
       "https://ri.bcow.xyz",
       "https://ri.nadeko.net",
       "https://rimgo.4o1x5.dev",
@@ -445,7 +445,14 @@
     "type": "gothub",
     "test_url": "/benbusby/farside",
     "fallback": "https://gothub.projectsegfau.lt",
-    "instances": null
+    "instances": [
+      "https://gothub.lunar.icu",
+      "https://gothub.r4fo.com",
+      "https://gothub.dev.projectsegfau.lt",
+      "https://gothub.projectsegfau.lt",
+      "https://gothub.libre.tw",
+      "https://gothub.wuemeli.com"
+    ]
   },
   {
     "type": "anonymousoverflow",
