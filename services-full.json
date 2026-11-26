@@ -28,17 +28,14 @@
     "test_url": "/r/popular",
     "fallback": "https://redlib.freedit.eu",
     "instances": [
-      "https://reddit.jeremyh.xyz",
-      "https://redlib.catsarch.com",
       "https://redlib.cow.rip",
-      "https://redlib.freedit.eu",
       "https://redlib.hbubli.cc",
       "https://redlib.nadeko.net",
-      "https://redlib.privadency.com",
-      "https://redlib.r4fo.com",
+      "https://redlib.reallyaweso.me",
       "https://redlib.thepixora.com",
       "https://redlib.utilibre.org",
-      "https://redlib.zanity.net"
+      "https://redlib.zanity.net",
+      "https://safereddit.com"
     ]
   },
   {
@@ -92,7 +89,7 @@
     "type": "invidious",
     "test_url": "/watch?v=eBGIQ7ZuuiU",
     "fallback": "https://invidious.snopyta.org",
-    "instances": null
+    "instances": []
   },
   {
     "type": "piped",
@@ -126,6 +123,7 @@
     "instances": [
       "https://nitter.catsarch.com",
       "https://nitter.click",
+      "https://nitter.femboy.delivery",
       "https://nitter.ip6arpa.uk",
       "https://nitter.kareem.one",
       "https://nitter.mie.foundation",
