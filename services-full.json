@@ -89,7 +89,14 @@
     "type": "invidious",
     "test_url": "/watch?v=eBGIQ7ZuuiU",
     "fallback": "https://invidious.snopyta.org",
-    "instances": []
+    "instances": [
+      "https://inv-ygg.nadeko.net",
+      "https://inv.nadeko.net",
+      "https://inv.nadeko.ygg",
+      "https://invidious.nerdvpn.de",
+      "https://invidious.tiekoetter.com",
+      "https://yt.chocolatemoo53.com"
+    ]
   },
   {
     "type": "piped",
@@ -133,7 +140,6 @@
       "https://nitter.r4fo.com",
       "https://nitter.tiekoetter.com",
       "https://nitterts.pages.dev",
-      "https://nohup.cz",
       "https://shitter.thepixora.com"
     ]
   },
@@ -522,6 +528,7 @@
       "https://tent.bloat.cat",
       "https://tent.canine.tools",
       "https://tent.deep-swarm.xyz",
+      "https://tent.notbig.business",
       "https://tent.private.coffee",
       "https://tent.sny.sh",
       "https://tent.xnand.xyz",
